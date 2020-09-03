@@ -1,6 +1,15 @@
 * {
-  font-family: "Roboto", sans-serif;
   margin: 0;
+}
+
+@font-face {
+  font-family: "brandon";
+  src: url(assets/Brandon-Grotesque/Brandon_reg.otf);
+}
+
+@font-face {
+  font-family: "Brandon_med";
+  src: url(assets/Brandon-Grotesque/Brandon_med.otf);
 }
 
 body {
@@ -19,19 +28,51 @@ h1 {
 }
 
 #harrysLogo {
-  width: 66.5625px;
-  height: 12.25px;
+  width: 12%;
+  height: 12%;
   float: left;
+  padding-top: 1px;
+  cursor: pointer;
 }
 
 .header-container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px;
+  width: auto;
+  margin: 0 0;
+  padding: 22px 18px 22px 25px;
   display: flex;
   justify-content: space-between;
 }
 header {
-  background-color: rgba(255, 255, 255, 0.527);
+  background-color: rgb(255, 255, 255);
   margin: 0;
+  padding: 22px 18px 22px 25px;
+  border-bottom: 1px solid rgb(167, 167, 167);
+}
+
+.navLinks {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.navLinks li {
+  font-family: "Brandon_med";
+  font-weight: 1000;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+
+.navLinks a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.navLinks a:hover {
+  color: #025f9c;
+}
+#nav-sprite {
+  margin-left: 8px;
+  transition: transform 0.25s ease;
 }

@@ -13,25 +13,50 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
     <link rel="icon" href="assets/h-512.png" />
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <img src="assets/Harry's logo.png" alt="Harry's logo" id="harrysLogo" />
-        <nav>
-          <ul class="navLinks">
-            <li><a href="#">GET STARTED</a></li>
-            <li><a href="#">PRODUCTS</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SHOP BUNDLES</a></li>
-            <li><a href="#">JOIN CORE</a></li>
-            <li><a href="#">HELP</a></li>
-            <li><a href="#">SIGN IN</a></li>
-            <li><a href="#">CART</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header class="header-container">
+      <nav class="primary-nav">
+        <ul class="navLinks">
+          <div>
+            <img
+              src="assets/Harry's logo.png"
+              alt="Harry's logo"
+              id="harrysLogo"
+            />
+          </div>
+          <li><a href="#">GET STARTED</a></li>
+          <li>
+            <a href="#"
+              >PRODUCTS <span id="nav-sprite" class="fas fa-caret-down"></span
+            ></a>
+          </li>
+
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#" style="color: #d1461c">SHOP BUNDLES</a></li>
+        </ul>
+      </nav>
+      <nav class="secondary">
+        <ul class="navLinks">
+          <li><a href="#">JOIN CORE</a></li>
+          <li><a href="#">HELP</a></li>
+          <li><a href="#">SIGN IN</a></li>
+          <li>
+            <a href="#"><i class="fas fa-2x fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <div class="product-page">
+      <section class="product-hero">
+        <div class="product-hero-content">
+          <div class="product-hero-images-section">
+            <section role="presentation"></section>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
